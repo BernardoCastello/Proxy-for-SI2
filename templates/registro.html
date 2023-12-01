@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Registro</h1>
+        <form action="/registro" method="POST">
+            <label for="new_username">Novo Usuário:</label>
+            <input type="text" id="new_username" name="new_username" required>
+
+            <label for="new_password">Nova Senha:</label>
+            <input type="password" id="new_password" name="new_password" required>
+            
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+
+            <button type="submit">Registrar</button>
+            
+        </form>
+        <p>Já tem uma conta? <a href="/">Faça login aqui</a></p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Página Logada</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo ao servidor proxy, {{ username }}</h1>
+        <form action="/proxy" method="get">
+            <label for="proxy_link">Link de Destino:</label>
+            <input type="url" id="proxy_link" name="proxy_link" required>
+            <button type="submit">Redirecionar</button>
+        </form>
+    </div>
+</body>
+</html>
